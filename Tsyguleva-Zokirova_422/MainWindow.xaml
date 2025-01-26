@@ -1,0 +1,29 @@
+﻿<Window x:Class="Tsyguleva_Zokirova_422.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tsyguleva_Zokirova_422"
+        mc:Ignorable="d"
+        Title="Math Function Calculator" Height="450" Width="800">
+    <Grid>
+        <Image x:Name="FunctionImage" Source="Resources/5238081212021600338.jpg" 
+       Height="200" Width="400" HorizontalAlignment="Left" VerticalAlignment="Top" 
+       ToolTip="Математическая функция" Margin="0,80,0,0" />
+        <Label Content="Введите x:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,220,0,0" />
+        <TextBox x:Name="InputX" Width="100" Height="25" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="70,220,0,0" ToolTip="Введите значение x" />
+
+        <Label Content="Выберите функцию f(x):" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,260,0,0" />
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,260,0,0">
+            <RadioButton x:Name="FuncSh" Content="sh(x)" ToolTip="Гиперболический синус" />
+            <RadioButton x:Name="FuncSquare" Content="x²" ToolTip="Квадрат числа" Margin="20,0,0,0" />
+            <RadioButton x:Name="FuncExp" Content="e^x" ToolTip="Экспонента" Margin="20,0,0,0" />
+        </StackPanel>
+
+        <Button x:Name="CalculateButton" Content="Вычислить" Width="100" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,320,0,0" ToolTip="Вычислить результат" Click="CalculateButton_Click" />
+        <Button x:Name="ClearButton" Content="Очистить" Width="100" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="110,320,0,0" ToolTip="Очистить все поля" Click="ClearButton_Click" />
+
+        <Label Content="Результат:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,370,0,0" />
+        <TextBox x:Name="ResultBox" Width="200" Height="25" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="70,370,0,0" IsReadOnly="True" ToolTip="Здесь отображается результат" />
+    </Grid>
+</Window>
