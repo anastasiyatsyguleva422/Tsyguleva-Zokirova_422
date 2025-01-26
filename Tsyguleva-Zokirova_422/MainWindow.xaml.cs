@@ -77,7 +77,7 @@ namespace Tsyguleva_Zokirova_422
 
         private void ClearButton_Click(object sender, RoutedEventArgs e)
         {
-            // Очистка всех полей
+            
             InputX.Text = string.Empty;
             ResultBox.Text = string.Empty;
             FuncSh.IsChecked = false;
@@ -96,4 +96,4 @@ namespace Tsyguleva_Zokirova_422
             base.OnClosing(e);
         }
     }
-}
+}  
